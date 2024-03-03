@@ -4,9 +4,9 @@ body {
     height: 100vh;
     width: 100%;
     position: relative;
-    background-image: linear-gradient(45deg, black, transparent);
     background-repeat: no-repeat;
-    background-repeat: no-repeat;
+    background-image: url(./assets/img-background.jpg);
+    background-image: radial-gradient(black, transparent);
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -40,7 +40,7 @@ body::before {
     max-width: 450px;
     height: 550px;
     margin-left: 50%;
-    background-color: rgb(0, 0, 0, 0.75);
+    background:black;
     border-radius: 10px;
     box-sizing: border-box;
     transform: translateX(-50%);
@@ -168,22 +168,64 @@ body::before {
 }
 
 
-@media screen and (max-width:900px) {
-    
+@media screen and (max-width: 500px)
+{
 
+    .login_body {
+        margin-left: 0px;
+        border-radius: 0px;
+        transform: none;
+        max-width: none;
+        z-index: auto;
+        padding: 100px 50px;
+        position: fixed;
+        background: black;
+        height: 100%;
+        top: 0px;
+    }
 
-.login_body{
-    padding: 50px;
-    position: fixed;
-    background: black;
-    height: 100%;
-    top: 0px;
+    .logo img {
+        height: 20px;
+        padding-top: 12px;
+        width: 75px;
+        z-index: auto;
+    }
 }
 
-.header {
-    padding: 10px 10px;
-    position: relative;
-    z-index: 10;
-}
+    @media only screen and (min-width: 400px) {
+        .login_body {
+            min-width: 380px; }
+
+    }
+
+   @media screen and (orientation: landscape){
+
+   
+
+   }
+
+   @media screen and (max-width: 750px){
+
+    .login_body {
+        margin-left: 0px;
+        border-radius: 0px;
+        transform: none;
+        max-width: none;
+        z-index: auto;
+        padding: 100px 50px;
+        position: fixed;
+        background: black;
+        height: 100%;
+        top: 0px;
+    }
+
+    .logo img {
+        height: 20px;
+        padding-top: 12px;
+        width: 75px;
+        z-index: auto;
+    }
 
 }
+
+
